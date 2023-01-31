@@ -1,4 +1,4 @@
-import 'package:app/screens/screensplash.dart';
+import 'package:app/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +14,6 @@ class MyApp extends StatelessWidget {
         title: "BeeWiser | Manage Your Finance",
         debugShowCheckedModeBanner: false,
         home: SplashScreen(),
-        //  Scaffold(
-        //     body: SafeArea(
-        //   child: Text("Apple"),
-        // ))
         );
   }
 }
