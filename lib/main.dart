@@ -14,10 +14,9 @@ class MyApp extends StatelessWidget
   Widget build(BuildContext context)
   {
     return const MaterialApp(
-      title: "BeeWiser | Manage Your Finance",
-      debugShowCheckedModeBanner: false,
-
-      home: SplashScreen(),
-    );
+        title: "BeeWiser | Manage Your Finance",
+        debugShowCheckedModeBanner: false,
+        home: SplashScreen(),
+        );
   }
 }
