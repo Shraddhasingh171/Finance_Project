@@ -14,10 +14,6 @@ class MyApp extends StatelessWidget {
         title: "BeeWiser | Manage Your Finance",
         debugShowCheckedModeBanner: false,
         home: SplashScreen(),
-        //  Scaffold(
-        //     body: SafeArea(
-        //   child: Text("Apple"),
-        // ))
         );
   }
 }
