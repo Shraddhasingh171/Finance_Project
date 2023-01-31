@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: SafeArea(
-          child: Text("Anurag has apple"),
+          child: Center(child: Text("App")),
         )));
   }
 }
