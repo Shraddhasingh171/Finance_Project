@@ -1,3 +1,4 @@
+import 'package:app/screens/screensplash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        title: "Finance App",
+        title: "BeeWiser | Manage Your Finance",
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            body: SafeArea(
-          child: Center(child: Text("App")),
-        )));
+        home: SplashScreen(),
+        );
   }
 }
