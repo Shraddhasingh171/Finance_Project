@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Onboardingpage4 extends StatefulWidget
+class Onboarding4 extends StatelessWidget
 {
-  const Onboardingpage4({super.key});
-
-  @override
-  State<Onboardingpage4> createState() => _Onboardingpage4State();
-}
-
-class _Onboardingpage4State extends State<Onboardingpage4>
-{
+  const Onboarding4({super.key});
 
   @override
   Widget build(BuildContext context)
@@ -25,7 +18,7 @@ class _Onboardingpage4State extends State<Onboardingpage4>
             children: [
               Image.asset(
                 'assets/images/pic2.png',
-                width: 350.0, 
+                width: 350.0,
                 height: 350.0
               ),
 
@@ -37,7 +30,7 @@ class _Onboardingpage4State extends State<Onboardingpage4>
                     fontSize: 28,
                     fontFamily: 'OpenSans',
                   ),
-                  textAlign: TextAlign.center,                
+                  textAlign: TextAlign.center,
                 )
               )
             ]

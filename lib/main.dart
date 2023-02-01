@@ -1,9 +1,9 @@
-import 'package:app/screens/onboarding1.dart';
-import 'package:app/screens/onboarding3.dart';
-import 'package:app/screens/onboarding4.dart';
-import 'package:app/screens/onboarding5.dart';
 import 'package:flutter/material.dart';
-import 'package:app/screens/splash_screen.dart';
+import 'package:app/screens/onboarding/splash_screen.dart';
+import 'package:app/screens/onboarding/onboarding1.dart';
+import 'package:app/screens/onboarding/onboarding3.dart';
+import 'package:app/screens/onboarding/onboarding4.dart';
+import 'package:app/screens/onboarding/onboarding5.dart';
 
 void main()
 {
@@ -17,10 +17,18 @@ class MyApp extends StatelessWidget
   @override
   Widget build(BuildContext context)
   {
-    return const MaterialApp(
-        title: "BeeWiser | Manage Your Finance",
-        debugShowCheckedModeBanner: false,
-        home: Onboardingpage5(),
-        );
+    return MaterialApp(
+      title: "BeeWiser | Manage Your Finance",
+      debugShowCheckedModeBanner: false,
+
+      initialRoute: "/",
+      routes: {
+          "/" : (context) => const SplashScreen(),
+          "/onboarding1" : (context) => const Onboarding1(),
+          "/onboarding3" : (context) => const Onboarding3(),
+          "/onboarding4" : (context) => const Onboarding4(),
+          "/onboarding5" : (context) => const Onboarding5(),
+      }
+    );
   }
 }
