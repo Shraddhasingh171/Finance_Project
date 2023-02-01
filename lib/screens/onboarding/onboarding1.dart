@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app/screens/Onboarding/onboarding3.dart';
+import 'package:app/screens/Onboarding/onboarding2.dart';
 
 class Onboarding1 extends StatelessWidget
 {
@@ -71,7 +71,7 @@ class Onboarding1 extends StatelessWidget
            onTap: () => {
              Navigator.push(
                context,
-               MaterialPageRoute(builder: (context) => const Onboarding3())
+               MaterialPageRoute(builder: (context) => const Onboarding2())
              )
            }
          )
