@@ -1,4 +1,5 @@
 import 'package:app/screens/onboarding1.dart';
+import 'package:app/screens/onboarding3.dart';
 import 'package:flutter/material.dart';
 import 'package:app/screens/splash_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget
     return const MaterialApp(
         title: "BeeWiser | Manage Your Finance",
         debugShowCheckedModeBanner: false,
-        home: Onboardingpage1(),
+        home: Onboardingpage3(),
         );
   }
 }
