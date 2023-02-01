@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../widgets/button.dart';
+import '../../widgets/user_input.dart';
 
 class ForgotPassword extends StatelessWidget
 {
@@ -12,87 +14,66 @@ class ForgotPassword extends StatelessWidget
         child: ListView(
 
           children: [
-            Column(
-              children: [
-                /* CONTAINER 1 */
-                Container(
-                  margin: const EdgeInsets.only(top: 50, bottom: 260),
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
 
-                  child: Column(
-                    children: [
-                      /* Forgot Password */
-                      const Text("Forgot Password",
-                        style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'OpenSans'
-                        )
-                      ),
+              child: Column(
+                children: [
 
-                      /* Text */
-                      Container(
-                        padding: const EdgeInsets.all(35),
-                        margin: const EdgeInsets.only(top: 40),
+                  /* CONTAINER 1 */
+                  Container(
+                    margin: const EdgeInsets.only(top: 30, bottom: 280),
 
-                        child: const Text("Don’t worry. \nEnter your email and we’ll send you a link to reset your password.",
+                    child: Column(
+                      children: [
+                        /* Forgot Password */
+                        const Text("Forgot Password",
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 28,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'OpenSans'
                           )
-                        )
-                      )
-                    ]
-                  )
-                ),
-
-
-                /* CONTAINER 2 */
-                SizedBox(
-                  child: Column(
-                    children: [
-                      /* Enter Email */
-                      Container(
-                        color: const Color(0xffE8E8E8),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width/1.3,
-                        margin: const EdgeInsets.only(bottom: 70),
-
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            hintText: "Email",
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.all(10)
-                          ),
-
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontFamily: 'OpenSans'
-                          )
-                        )
-                      ),
-
-                      /* Button */
-                      const ElevatedButton(
-                        style: ButtonStyle(
-                          textStyle: MaterialStatePropertyAll(TextStyle(fontSize: 17)),
-                          foregroundColor: MaterialStatePropertyAll(Colors.white),
-                          backgroundColor: MaterialStatePropertyAll(Color(0xffFFCA0E)),
-                          padding: MaterialStatePropertyAll(EdgeInsets.fromLTRB(122, 16, 122, 16))
                         ),
 
-                        onPressed: null,
+                        /* Text */
+                        Container(
+                          padding: const EdgeInsets.all(35),
+                          margin: const EdgeInsets.only(top: 40),
 
-                        child: Text("Continue",
-                          style: TextStyle(
-                            fontSize: 17
+                          child: const Text("Don’t worry. \nEnter your email and we’ll send you a link to reset your password.",
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w600,
+                              fontFamily: 'OpenSans'
+                            )
                           )
                         )
-                      )
-                    ]
+                      ]
+                    )
+                  ),
+
+
+                  /* CONTAINER 2 */
+                  SizedBox(
+                    child: Column(
+                      children: [
+                        /* Enter Email */
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 70),
+                          child: const UserInput(hint: "Email")
+                        ),
+
+                        /* Button */
+                        Button(
+                          text: "Continue",
+                          onPressed: (){}
+                        )
+                      ]
+                    )
                   )
-                )
-              ]
+
+                ]
+              ),
             )
           ]
         )
