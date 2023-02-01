@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Onboardingpage5 extends StatefulWidget
+class Onboarding3 extends StatelessWidget
 {
-  const Onboardingpage5({super.key});
-
-  @override
-  State<Onboardingpage5> createState() => _Onboardingpage5State();
-}
-
-class _Onboardingpage5State extends State<Onboardingpage5>
-{
+  const Onboarding3({super.key});
 
   @override
   Widget build(BuildContext context)
@@ -24,20 +17,20 @@ class _Onboardingpage5State extends State<Onboardingpage5>
 
             children: [
               Image.asset(
-                'assets/images/pic3.png',
-                width: 350.0, 
-                height: 350.0
+                'assets/images/pic1.png',
+                width: 300.0,
+                height: 300.0
               ),
 
               Container(
                 padding: const EdgeInsets.all(30.0),
-                child: const Text("Keep your all personal information private",
+                child: const Text("Manage all your money \n in one place",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 28,
                     fontFamily: 'OpenSans',
                   ),
-                  textAlign: TextAlign.center,                
+                  textAlign: TextAlign.center,
                 )
               )
             ]

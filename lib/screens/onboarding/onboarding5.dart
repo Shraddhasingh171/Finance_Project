@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatefulWidget
+class Onboarding5 extends StatelessWidget
 {
-  const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen>
-{
+  const Onboarding5({super.key});
 
   @override
   Widget build(BuildContext context)
@@ -24,21 +17,20 @@ class _SplashScreenState extends State<SplashScreen>
 
             children: [
               Image.asset(
-                'assets/images/logo.png',
-                width: 300.0, 
-                height: 300.0
+                'assets/images/pic3.png',
+                width: 350.0,
+                height: 350.0
               ),
 
               Container(
                 padding: const EdgeInsets.all(30.0),
-                child: const Text("BeeWiser",
+                child: const Text("Keep your all personal information private",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 40,
+                    fontSize: 28,
                     fontFamily: 'OpenSans',
-                    fontWeight: FontWeight.bold,
                   ),
-                  textAlign: TextAlign.center,                
+                  textAlign: TextAlign.center,
                 )
               )
             ]

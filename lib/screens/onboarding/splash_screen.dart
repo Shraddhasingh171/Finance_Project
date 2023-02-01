@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Onboardingpage3 extends StatefulWidget
+class SplashScreen extends StatelessWidget
 {
-  const Onboardingpage3({super.key});
-
-  @override
-  State<Onboardingpage3> createState() => _Onboardingpage3State();
-}
-
-class _Onboardingpage3State extends State<Onboardingpage3>
-{
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context)
@@ -24,20 +17,21 @@ class _Onboardingpage3State extends State<Onboardingpage3>
 
             children: [
               Image.asset(
-                'assets/images/pic1.png',
-                width: 300.0, 
+                'assets/images/logo.png',
+                width: 300.0,
                 height: 300.0
               ),
 
               Container(
                 padding: const EdgeInsets.all(30.0),
-                child: const Text("Manage all your money \n in one place",
+                child: const Text("BeeWiser",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 28,
+                    fontSize: 40,
                     fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold,
                   ),
-                  textAlign: TextAlign.center,                
+                  textAlign: TextAlign.center,
                 )
               )
             ]
