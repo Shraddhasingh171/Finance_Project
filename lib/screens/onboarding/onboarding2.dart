@@ -15,9 +15,9 @@ class Onboarding2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                       Container(
-                          padding: const EdgeInsets.all(50.0),
+                          padding: const EdgeInsets.all(66.5),
                           child: const Text(
-                            "Together we’ll reach your \n financial goals",
+                            "Together we’ll reach your financial goals",
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 22,
@@ -27,9 +27,9 @@ class Onboarding2 extends StatelessWidget {
                             textAlign: TextAlign.center,
                           )),
                       Container(
-                          padding: const EdgeInsets.all(80.0),
+                          padding: const EdgeInsets.all(60.0),
                           child: const Text(
-                            "BeeWiser will help you on \n tracking your expenses, so you \n can keep your savings grow \n every month",
+                            "BeeWiser will help you on tracking your expenses, so you can keep your savings grow every month",
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -39,8 +39,8 @@ class Onboarding2 extends StatelessWidget {
                           )),
                       Image.asset(
                         'assets/images/onboarding2.png',
-                        width: 670,
-                        height: 255,
+                        width: 430,
+                        height: 300,
                       ),
                     ])),
 
