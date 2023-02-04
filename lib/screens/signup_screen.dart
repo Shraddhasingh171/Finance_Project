@@ -1,5 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:finance_project/services/firebase_auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -92,20 +90,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   buttonText: "Sign Up",
                   buttonColor: const Color.fromARGB(255, 255, 205, 41),
                   textColor: Colors.black,
-                  onPressed: () async {
-                    try {
-                      await FirebaseAuthService().signup(
-                        _emailController.text.trim(),
-                         _passwordController.text.trim());
-
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
-                    } on FirebaseException catch (e) {
-                      print(e.message);
-                    }
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (_) => const LoginScreen()),
-                    // );
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const LoginScreen()),
+                    );
                   },
                 ),
                 Padding(
