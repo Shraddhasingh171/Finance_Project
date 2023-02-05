@@ -10,6 +10,7 @@ class Onboarding2 extends StatelessWidget
   {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
         color: Colors.white70,
 
         child: InkWell(
@@ -48,7 +49,7 @@ class Onboarding2 extends StatelessWidget
 
                 Image.asset(
                   'assets/images/onboarding2.png',
-                  width: 430,
+                  width: MediaQuery.of(context).size.width,
                   height: 300,
                 )
               ]
