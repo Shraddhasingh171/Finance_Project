@@ -74,7 +74,7 @@ class _NavbarState extends State<Navbar>
           setState((){
             current = index;
           })
-        }
-      );
+        },
+    );
   }
 }
