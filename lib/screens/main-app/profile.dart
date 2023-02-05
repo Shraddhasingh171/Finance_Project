@@ -87,7 +87,7 @@ class Profile extends StatelessWidget
 
                   /* LOG OUT */
                   ProfileMenu(
-                    text: "Account",
+                    text: "Logout",
                     icon: Icon(Icons.logout, size: 30)
                   )
                 ]
