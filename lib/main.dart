@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget
         useMaterial3: true
       ),
 
-      initialRoute: "/onboarding2",
+      initialRoute: "/onboarding1",
       routes: {
         "/" : (context) => const SplashScreen(),
         "/onboarding1" : (context) => const Onboarding1(),
