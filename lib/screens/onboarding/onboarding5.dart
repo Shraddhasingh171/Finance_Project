@@ -17,7 +17,7 @@ class Onboarding5 extends StatelessWidget
 
             children: [
               Image.asset(
-                'assets/images/pic3.png',
+                'assets/images/pic4.png',
                 width: 350.0,
                 height: 350.0
               ),

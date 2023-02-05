@@ -48,7 +48,7 @@ class Onboarding2 extends StatelessWidget
                 ),
 
                 Image.asset(
-                  'assets/images/onboarding2.png',
+                  'assets/images/pic1.png',
                   width: MediaQuery.of(context).size.width,
                   height: 300,
                 )

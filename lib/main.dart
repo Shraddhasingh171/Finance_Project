@@ -12,6 +12,9 @@ import 'package:app/screens/onboarding/onboarding5.dart';
 import 'package:app/screens/signup/forgot_password.dart';
 import 'package:app/screens/signup/reset_password.dart';
 
+// MAIN APP SCREENS :
+import 'package:app/screens/main-app/profile.dart';
+
 void main()
 {
   runApp(const MyApp());
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget
         useMaterial3: true
       ),
 
-      initialRoute: "/onboarding1",
+      initialRoute: "/profile",
       routes: {
         "/" : (context) => const SplashScreen(),
         "/onboarding1" : (context) => const Onboarding1(),
@@ -41,7 +44,9 @@ class MyApp extends StatelessWidget
         "/onboarding5" : (context) => const Onboarding5(),
 
         "/forgot-password" : (context) => const ForgotPassword(),
-        "/reset-password"  : (context) => const ResetPassword()
+        "/reset-password"  : (context) => const ResetPassword(),
+
+        "/profile" : (context) => const Profile()
       }
     );
   }
