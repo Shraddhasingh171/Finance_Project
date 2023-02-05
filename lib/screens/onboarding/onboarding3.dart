@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import 'package:finance_project/screens/onboarding/onboarding4.dart';
 import 'package:flutter/material.dart';
 //import 'package:app/screens/onboarding/onboarding4.dart';
+=======
+import 'package:flutter/material.dart';
+import 'package:app/screens/Onboarding/onboarding4.dart';
+>>>>>>> a3c6c7c24cd5cc32b420f78be7681afd3051efa9
 
 class Onboarding3 extends StatelessWidget
 {
