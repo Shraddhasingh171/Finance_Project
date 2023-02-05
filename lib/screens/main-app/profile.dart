@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app/widgets/profile_menu.dart';
+import 'package:app/widgets/bottom_navbar.dart';
 
 class Profile extends StatelessWidget
 {
@@ -9,7 +10,8 @@ class Profile extends StatelessWidget
   Widget build(BuildContext context)
   {
     return Scaffold(
-      // bottomNavigationBar: ,
+
+      bottomNavigationBar: const Navbar(),
 
       body: SafeArea(
         child: Column(
@@ -55,7 +57,7 @@ class Profile extends StatelessWidget
               height: 350,
               width: MediaQuery.of(context).size.width/1.3,
               padding: const EdgeInsets.fromLTRB(20, 5, 0, 5),
-              
+
               decoration: const BoxDecoration(
                 color: Color(0xffDEDEDE),
                 borderRadius: BorderRadius.all(Radius.circular(20))
