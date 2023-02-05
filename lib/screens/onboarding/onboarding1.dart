@@ -16,15 +16,14 @@ class Onboarding1 extends StatelessWidget
 
            child: Center(
              child: Column(
-               mainAxisAlignment: MainAxisAlignment.end,
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                children: [
                  Container(
-                   padding: const EdgeInsets.all(20.0),
+                   margin: const EdgeInsets.only(top: 50),
                    child: const Text("Hello!",
                      style: TextStyle(
-                       color: Colors.redAccent
-,
+                       color: Colors.redAccent,
                        fontSize: 60,
                        fontFamily: 'Chewy',
                        fontWeight: FontWeight.bold,
@@ -38,7 +37,7 @@ class Onboarding1 extends StatelessWidget
                    child: const Text("I am BeeWiser,\n your new finance tracker",
                      style: TextStyle(
                        color: Colors.black,
-                       fontSize: 20,
+                       fontSize: 24,
                        fontFamily: 'OpenSans',
                        fontWeight: FontWeight.bold,
                      ),
@@ -47,7 +46,7 @@ class Onboarding1 extends StatelessWidget
                  ),
 
                  Container(
-                   padding: const EdgeInsets.all(80.0),
+                   padding: const EdgeInsets.all(50),
                    child: const Text("You're amazing for taking this first step towards getting better control over your money",
                      style: TextStyle(
                        color: Colors.black,
@@ -60,8 +59,8 @@ class Onboarding1 extends StatelessWidget
 
                  Image.asset(
                    'assets/images/logo.png',
-                   width: 100.0,
-                   height: 100.0,
+                   width: 140,
+                   height: 150,
                  ),
                ]
              )
