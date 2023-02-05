@@ -20,7 +20,7 @@ class Onboarding3 extends StatelessWidget
 
               children: [
                 Image.asset(
-                  'assets/images/pic1.png',
+                  'assets/images/pic2.png',
                   width: 300.0,
                   height: 300.0
                 ),
