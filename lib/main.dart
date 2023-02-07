@@ -34,8 +34,6 @@ class MyApp extends StatelessWidget
       theme: ThemeData(
         useMaterial3: true
       ),
-      
-      initialRoute: "/settings",
       routes: {
         "/" : (context) => const SplashScreen(),
         "/onboarding1" : (context) => const Onboarding1(),
