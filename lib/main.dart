@@ -16,6 +16,9 @@ import 'package:app/screens/signup/reset_password.dart';
 import 'package:app/screens/main-app/profile.dart';
 import 'package:app/screens/main-app/settings.dart';
 
+//EXPENSE TRACKER SCREENS :
+import 'package:app/screens/expense/expensepage.dart';
+
 void main()
 {
   runApp(const MyApp());
@@ -34,8 +37,9 @@ class MyApp extends StatelessWidget
       theme: ThemeData(
         useMaterial3: true
       ),
-
+      
       initialRoute: "/settings",
+
       routes: {
         "/" : (context) => const SplashScreen(),
         "/onboarding1" : (context) => const Onboarding1(),
@@ -48,7 +52,12 @@ class MyApp extends StatelessWidget
         "/reset-password"  : (context) => const ResetPassword(),
 
         "/profile" : (context) => const Profile(),
+
+
+        "/expensepage" : (context) => const expense(),
+
         "/settings" : (context) => const Settings()
+
       }
     );
   }
