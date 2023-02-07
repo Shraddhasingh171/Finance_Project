@@ -15,6 +15,9 @@ import 'package:app/screens/signup/reset_password.dart';
 // MAIN APP SCREENS :
 import 'package:app/screens/main-app/profile.dart';
 
+//EXPENSE TRACKER SCREENS :
+import 'package:app/screens/expense/expensepage.dart';
+
 void main()
 {
   runApp(const MyApp());
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget
         useMaterial3: true
       ),
 
-      initialRoute: "/profile",
+      initialRoute: "/expensepage",
       routes: {
         "/" : (context) => const SplashScreen(),
         "/onboarding1" : (context) => const Onboarding1(),
@@ -46,7 +49,9 @@ class MyApp extends StatelessWidget
         "/forgot-password" : (context) => const ForgotPassword(),
         "/reset-password"  : (context) => const ResetPassword(),
 
-        "/profile" : (context) => const Profile()
+        "/profile" : (context) => const Profile(),
+
+        "/expensepage" : (context) => const expense()
       }
     );
   }
