@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget
       theme: ThemeData(
         useMaterial3: true
       ),
-
+      
       initialRoute: "/settings",
       routes: {
         "/" : (context) => const SplashScreen(),
@@ -48,7 +48,6 @@ class MyApp extends StatelessWidget
         "/reset-password"  : (context) => const ResetPassword(),
 
         "/profile" : (context) => const Profile(),
-        "/settings" : (context) => const Settings()
       }
     );
   }
